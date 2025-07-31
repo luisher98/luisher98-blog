@@ -95,6 +95,24 @@ module.exports = () => {
         use: ['@svgr/webpack'],
       })
 
+      // Suppress Spline runtime critical dependency warning
+      config.module.rules.push({
+        test: /node_modules\/@splinetool\/runtime\/build\/ui\.js$/,
+        parser: {
+          requireEnsure: false,
+          require: false,
+        },
+      })
+
+      // Add webpack ignore plugin for dynamic requires
+      if (!config.ignoreWarnings) {
+        config.ignoreWarnings = []
+      }
+      config.ignoreWarnings.push({
+        module: /node_modules\/@splinetool\/runtime\/build\/ui\.js$/,
+        message: /Critical dependency: require function is used in a way in which dependencies cannot be statically extracted/,
+      })
+
       return config
     },
   })
