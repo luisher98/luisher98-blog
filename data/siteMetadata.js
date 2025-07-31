@@ -1,13 +1,13 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Luis Hernández Blog',
+  author: 'Luis Hernández',
+  headerTitle: '', // Empty to show only the logo
+  description: 'Personal blog of Luis Hernández - thoughts on technology, development, and life',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://luisher98-blog.vercel.app',
+  siteRepo: 'https://github.com/luisher98/luisher98-blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',

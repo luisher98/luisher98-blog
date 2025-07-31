@@ -14,12 +14,16 @@
   "dependencies": {
     "@headlessui/react": "2.2.0",
     "@next/bundle-analyzer": "15.2.4",
+    "@react-three/drei": "^10.6.1",
+    "@react-three/fiber": "^9.3.0",
     "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/postcss": "^4.0.5",
     "@tailwindcss/typography": "^0.5.15",
+    "@types/three": "^0.178.1",
     "body-scroll-lock": "^4.0.0-beta.0",
     "contentlayer2": "0.5.5",
     "esbuild": "0.25.2",
+    "framer-motion": "^12.23.12",
     "github-slugger": "^2.0.0",
     "gray-matter": "^4.0.2",
     "hast-util-from-html-isomorphic": "^2.0.0",
@@ -44,6 +48,7 @@
     "remark-github-blockquote-alert": "^1.2.1",
     "remark-math": "^6.0.0",
     "tailwindcss": "^4.0.5",
+    "three": "^0.178.0",
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
