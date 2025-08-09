@@ -15,20 +15,21 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
-      
+
       // Show header when scrolled past 300px (adjust this value as needed)
       setIsVisible(scrollY > 300)
     }
 
     // Check initial scroll position
     handleScroll()
-    
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  let headerClass = 'w-full bg-white dark:bg-gray-950 transition-all duration-300 fixed top-0 left-0 right-0 z-50'
-  
+  let headerClass =
+    'w-full bg-white dark:bg-gray-950 transition-all duration-300 fixed top-0 left-0 right-0 z-50'
+
   // Add visibility classes
   if (!isVisible) {
     headerClass += ' -translate-y-full opacity-0'
